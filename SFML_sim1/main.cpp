@@ -14,9 +14,7 @@
 // function `resourcePath()` from ResourcePath.hpp
 //
 
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
-#include <SFML/OpenGL.hpp>
+
 #include <iostream>
 #include "BasicConfig.hpp"
 
@@ -29,7 +27,7 @@ const int SCREEN_WIDTH = 1000;
 const int SCREEN_HEIGHT = 600;
 const double GRAVITATIONAL_CONST = 0.0667408;
 const int NUM_PARTICLES = 10000;
-const int NUM_THREADS = 5;
+const int NUM_THREADS = 7;
 
 vec2 gravity;
 vec2 blackHole;
@@ -37,26 +35,37 @@ bool gravityOn = false;
 bool attractionOn = false;
 
 vector<Particle> particles;
+sf::VertexArray vertices;
+
+sf::RenderWindow window;
 
 
 void initialize() {
     for (int i = 0; i < NUM_PARTICLES; i++) {
         particles.push_back(Particle(rand() % SCREEN_WIDTH, rand() % SCREEN_HEIGHT));
     }
+    window.create(sf::VideoMode(1000, 800), "Tester");
+    window.setVisible(true);
+    glEnable(GL_TEXTURE_2D);
+    
 }
 
 void draw() {
-    for (Particle p : particles) {
-        p.draw()
+    for (Particle &p : particles) {
+        p.draw(vertices);
     }
+    
+    window.draw(vertices);
+    
+    // cout << '.';
 }
 
 int main(int, char const**)
 {
     // Create the main window
-    //sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
-    sf::RenderWindow window(sf::VideoMode(800, 600), "OpenGL");
-    glEnable(GL_TEXTURE_2D);
+    //sf::RenderWindow window(sf::VideoMode(1000, 800), "OpenGL");
+
+    initialize();
 
     // Set the Icon
     sf::Image icon;
@@ -90,8 +99,6 @@ int main(int, char const**)
                         cout << "unhandled" << endl;
                 }
             }
-            
-
             
             
         }

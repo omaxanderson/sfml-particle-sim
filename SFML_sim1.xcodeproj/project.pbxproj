@@ -13,9 +13,9 @@
 		503E363C1F7823800069B21B /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 503E363B1F7823800069B21B /* nice_music.ogg */; };
 		503E363E1F7823800069B21B /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 503E363D1F7823800069B21B /* sansation.ttf */; };
 		503E36401F7823800069B21B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 503E363F1F7823800069B21B /* icon.png */; };
-		503E364A1F78258B0069B21B /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503E36471F78258B0069B21B /* Particle.cpp */; };
-		503E364B1F78258B0069B21B /* BasicConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503E36491F78258B0069B21B /* BasicConfig.cpp */; };
 		503E364E1F7828F70069B21B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503E364D1F7828F70069B21B /* OpenGL.framework */; };
+		50ED66161F78BC4500D74F63 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ED66121F78BC4500D74F63 /* Particle.cpp */; };
+		50ED66171F78BC4500D74F63 /* BasicConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ED66151F78BC4500D74F63 /* BasicConfig.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +28,11 @@
 		503E363B1F7823800069B21B /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
 		503E363D1F7823800069B21B /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		503E363F1F7823800069B21B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		503E36461F78258B0069B21B /* BasicConfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BasicConfig.hpp; path = ../../std_test2/std_test2/BasicConfig.hpp; sourceTree = "<group>"; };
-		503E36471F78258B0069B21B /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Particle.cpp; path = ../../std_test2/std_test2/Particle.cpp; sourceTree = "<group>"; };
-		503E36481F78258B0069B21B /* Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Particle.hpp; path = ../../std_test2/std_test2/Particle.hpp; sourceTree = "<group>"; };
-		503E36491F78258B0069B21B /* BasicConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BasicConfig.cpp; path = ../../std_test2/std_test2/BasicConfig.cpp; sourceTree = "<group>"; };
 		503E364D1F7828F70069B21B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		50ED66121F78BC4500D74F63 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		50ED66131F78BC4500D74F63 /* BasicConfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BasicConfig.hpp; sourceTree = "<group>"; };
+		50ED66141F78BC4500D74F63 /* Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
+		50ED66151F78BC4500D74F63 /* BasicConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicConfig.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +67,10 @@
 		503E36301F78237F0069B21B /* SFML_sim1 */ = {
 			isa = PBXGroup;
 			children = (
-				503E36461F78258B0069B21B /* BasicConfig.hpp */,
-				503E36491F78258B0069B21B /* BasicConfig.cpp */,
-				503E36481F78258B0069B21B /* Particle.hpp */,
-				503E36471F78258B0069B21B /* Particle.cpp */,
+				50ED66151F78BC4500D74F63 /* BasicConfig.cpp */,
+				50ED66131F78BC4500D74F63 /* BasicConfig.hpp */,
+				50ED66121F78BC4500D74F63 /* Particle.cpp */,
+				50ED66141F78BC4500D74F63 /* Particle.hpp */,
 				503E36331F7823800069B21B /* ResourcePath.mm */,
 				503E36351F7823800069B21B /* ResourcePath.hpp */,
 				503E36361F7823800069B21B /* main.cpp */,
@@ -195,9 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503E364B1F78258B0069B21B /* BasicConfig.cpp in Sources */,
+				50ED66171F78BC4500D74F63 /* BasicConfig.cpp in Sources */,
 				503E36371F7823800069B21B /* main.cpp in Sources */,
-				503E364A1F78258B0069B21B /* Particle.cpp in Sources */,
+				50ED66161F78BC4500D74F63 /* Particle.cpp in Sources */,
 				503E36341F7823800069B21B /* ResourcePath.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +330,7 @@
 				503E36451F7823800069B21B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

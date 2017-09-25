@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CC744C978A963357C1C03A46B820FB25009744AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3A949A473D318F2CEC27314006D08EE1F34DBDE3" : 9223372036854775807,
+    "CC744C978A963357C1C03A46B820FB25009744AB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2D693803-C4B7-406C-9D63-A9CA6EAA8BF8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3A949A473D318F2CEC27314006D08EE1F34DBDE3" : "std_test2\/",
+    "CC744C978A963357C1C03A46B820FB25009744AB" : "SFML_sim1\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SFML_sim1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SFML_sim1.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/omaxanderson\/particle-sim.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3A949A473D318F2CEC27314006D08EE1F34DBDE3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/omaxanderson\/sfml-particle-sim.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CC744C978A963357C1C03A46B820FB25009744AB"
+    }
+  ]
+}
